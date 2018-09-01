@@ -1,0 +1,24 @@
+.logo{
+  padding-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+.nav-link{
+  margin-top: 15px;
+  display: inline-block;
+  color: white;
+}
+.nav-link:hover{
+  color: #E9E9ED;
+}
+.line{
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, $off-red, white, $off-red);
+  background-image: -moz-linear-gradient(left, $off-red, white, $off-red);
+  background-image: -ms-linear-gradient(left, $off-red, white, $off-red);
+  background-image: -o-linear-gradient(left, $off-red, white, $off-red);
+}

@@ -1,0 +1,83 @@
+.search-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-container{
+  margin: 15px;
+  width: 600px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(75, 75, 75, .07);
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  box-shadow: 7px 10px 20px -8px rgba(0,0,0,0.1);
+}
+
+.custom-card{
+  padding: 15px;
+  color: #8e8e93;
+}
+.custom-card a{
+  color: $off-red;
+  text-decoration: none;
+}
+.custom-card a:hover{
+  color: $off-red;
+  text-decoration: underline;
+}
+.card-left-side{
+  float: left;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.card-image{
+}
+.card-image img{
+  width: 150px;
+  border-radius: 5px;
+}
+.card-sub-image a{
+  font-weight: 600;
+  font-size: 12px
+}
+.card-sub-image small{
+  margin-right: 5px
+}
+.card-right-side{
+  float: left;
+}
+.card-information{
+  max-width: 400px;
+  padding: 15px;
+}
+.card-information h3{
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px
+}
+.card-information button{
+  margin-bottom: 5px;
+}
+.celear-fix{
+  clear: both;
+}
+.card-infoo{
+  margin-bottom: 40px;
+}
+.card-infoo p{
+  margin: 0px;
+  margin-bottom: 5px
+}
+
+button{
+  border: none;
+  outline: none;
+  background: #f7f7f7;
+  border: 1px solid $off-red;
+  color: $off-red;
+  padding: 7px;
+  border-radius: 5px;
+}
+button:hover{
+  cursor: pointer;
+}

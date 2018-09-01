@@ -1,0 +1,31 @@
+html{
+    font-size: 62.5%; //baes mishe font paye beshe 10px ke kar ro baraye kar ba REM rahat mikone
+}
+
+body{
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1.6rem; 
+}
+
+button{
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: default;
+}
+a:visited{
+    color: white;
+}
+.is-active{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.is-active:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #E9E9ED;
+}

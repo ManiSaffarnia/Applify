@@ -1,0 +1,15 @@
+.fav-header,.search-header{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 30px 5px 0px 5px;
+}
+.line-black{
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, white, black, white);
+  background-image: -moz-linear-gradient(left, white, black, white);
+  background-image: -ms-linear-gradient(left, white, black, white);
+  background-image: -o-linear-gradient(left, white, black, white);
+}
