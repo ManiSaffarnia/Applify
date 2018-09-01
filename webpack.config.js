@@ -4,12 +4,11 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = env => {
   const isProduction = env === "production";
   const CssExtract = new ExtractTextPlugin("styles.css");
-  const port = process.env.PORT || 3000;
-  console.log(port);
+
   return {
     entry: "./src/app.js",
     output: {
-      path: path.join(__dirname, "public"),
+      path: path.join(__dirname, "public", "dist"),
       filename: "bundle.js"
     },
     module: {
@@ -45,7 +44,7 @@ module.exports = env => {
     devServer: {
       contentBase: path.join(__dirname, "public"),
       historyApiFallback: true,
-      port: port
+      publicPath: '/dist/'
     }
   };
 };
