@@ -21,13 +21,17 @@ class SearchAlbum extends React.Component {
     this.props.dispatch(setSearchText(searchText));
     //this.props.dispatch(resetSearchResult);
     const mani = this;
+    console.log(searchText)
     fetch(
-      `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`
+      `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`, {
+        'mode': "cors",
+        'access-Control-Allow-Origin': "*"
+      }
     )
-      .then(function(res) {
+      .then(function (res) {
         return res.json();
       })
-      .then(function(data) {
+      .then(function (data) {
         const searchResult = data.results;
         mani.props.dispatch(setSearchResult(searchResult));
       })
