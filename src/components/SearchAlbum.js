@@ -25,7 +25,7 @@ class SearchAlbum extends React.Component {
     fetch(
       `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`, {
         'mode': "cors",
-        'access-Control-Allow-Origin': "*"
+        'access-Control-Allow-Origin': "https://applify-mani.herokuapp.com"
       }
     )
       .then(function (res) {
