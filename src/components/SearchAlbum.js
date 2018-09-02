@@ -23,9 +23,10 @@ class SearchAlbum extends React.Component {
     const mani = this;
     console.log(searchText)
     fetch(
-      `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`, {
-        'mode': "cors",
-        'access-Control-Allow-Origin': "https://applify-mani.herokuapp.com"
+      `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`,
+      {
+        mode: 'cors',
+        'access-control-allow-origin': 'https://applify-mani.herokuapp.com/'
       }
     )
       .then(function (res) {
