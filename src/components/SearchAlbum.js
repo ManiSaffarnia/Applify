@@ -23,7 +23,7 @@ class SearchAlbum extends React.Component {
     //this.props.dispatch(resetSearchResult);
     const mani = this;
 
-    fetch(`http://localhost:3000/api/search?search=${searchText}`)
+    fetch(`/api/search?search=${searchText}`)
       .then(res => {
         const parsedResponse = res.json()
         return parsedResponse;
