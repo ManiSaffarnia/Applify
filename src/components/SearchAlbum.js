@@ -6,6 +6,7 @@ import {
   setSearchResult,
   resetSearchResult
 } from "../actions/searchalbumActions";
+
 class SearchAlbum extends React.Component {
   constructor(props) {
     super(props);
@@ -21,16 +22,11 @@ class SearchAlbum extends React.Component {
     this.props.dispatch(setSearchText(searchText));
     //this.props.dispatch(resetSearchResult);
     const mani = this;
-    console.log(searchText)
-    fetch(
-      `https://itunes.apple.com/search?term=${searchText}&limit=15&entity=album`,
-      {
-        mode: 'cors',
-        'access-control-allow-origin': 'https://applify-mani.herokuapp.com/'
-      }
-    )
-      .then(function (res) {
-        return res.json();
+
+    fetch(`http://localhost:3000/api/search?search=${searchText}`)
+      .then(res => {
+        const parsedResponse = res.json()
+        return parsedResponse;
       })
       .then(function (data) {
         const searchResult = data.results;
